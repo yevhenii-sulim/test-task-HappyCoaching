@@ -1,0 +1,262 @@
+.header {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 1440px) {
+    padding-left: 85px;
+    padding-right: 75px;
+  }
+}
+.nav-button{
+  background: transparent;
+  border:none;
+  position: absolute;
+  top: 0;
+  right: -25%;
+  width: 30px;
+  height: 30px;
+  transform:translate(-50%, 50%);
+  display: block;
+  cursor: pointer;
+      z-index:5;
+  @media screen and (min-width: 1440px){
+    display: none;
+  }
+}
+.button-menu{
+    width: 100%;
+    height: 2px;
+    background: $color-nav-text;
+    display: block;
+    transition:all 250ms ease;
+    position: absolute;
+    transform-origin: 0 0;
+
+  &--top{
+    top: 20%;
+    &.hidden{
+      transform:rotate(45deg) translatey( -50%);
+      top: 10%;
+
+    }
+  }
+  &--bottom{
+    bottom: 20%;
+    &.hidden{
+      transform:rotate(-45deg) translatey(-50%);
+      bottom: 10%;
+    }
+  }
+  &--open{
+top:50%;
+transform:translatey(-50%);
+    &.hidden{
+      width:0%
+    }
+  }
+}
+
+.logo {
+  padding-left: 34px;
+  text-decoration: none;
+  color: $color-logo-text;
+  font-size: 16px;
+  font-family: $semibold;
+}
+
+.logo:before {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-position: -10px -13px;
+}
+.nav-menu{
+  position: fixed;
+  top:60px;
+  right: calc(0% + 50px);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap:60px;
+  top: 30%;
+  transform: translatey(-50%);
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  transition: right 250ms ease 250ms;
+  &.hidden{
+    right: -100%;
+  }
+  .list-menu{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+  }
+  @media screen and (min-width:1440px) {
+    display: none;
+  }
+  
+}
+.backdrop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #00000070;
+  z-index: 2;
+  opacity: 1;
+  transition:opacity 250ms ease;
+  &.hidden{
+    pointer-events: none;
+    opacity: 0
+  }
+}
+.nav,
+.nav-list {
+  @media screen and (max-width: 1439px) {
+    display:none;
+  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+  gap: 27px;
+}
+.nav-list {
+  gap: 32px;
+}
+.nav-link{
+  color: $color-nav-text;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+.list {
+  position: relative;
+  padding-bottom: 3px;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    height: 2px;
+    width: 0%;
+    background-color: $color-nav-text;
+    transition: all 100ms ease;
+  }
+  &:hover::before {
+    right: 0%;
+    width: 50%;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0%;
+    background-color: $color-nav-text;
+    transition: all 100ms ease;
+  }
+  &:hover::after {
+    left: 0%;
+    width: 50%;
+  }
+}
+
+.button {
+  background: $bg-btn;
+  border-radius: 4px;
+  color: $color-btn;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: $bg-btn-hover;
+  }
+}
+
+.button--page {
+  padding: 9px 16px 9px 16px;
+  width: 250px;
+  border-radius: 10px;
+}
+.button--nav {
+  padding: 11px 16px 11px 16px;
+}
+.main {
+    @include displayGrid(minmax(677px, auto), 1fr, 0, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+  @media screen and (min-width:1440px){
+    @include displayGrid(minmax(677px, auto), 1fr 1fr, 160px, 0);
+    padding-left: 85px;
+    padding-right: 75px;
+  }
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-page-second;
+  position: relative;
+}
+.main-tytle h1 {
+  font-size: 72px;
+  font-family: $semibold;
+  color: $color-tytle-text;
+}
+.text-main {
+  @media screen and (min-width:1440px){
+    padding-top: 12px;
+  }
+  font-size: 18px;
+  padding-top: 60px;
+  padding-bottom: 12px;
+  line-height: 1.55;
+  color: $color-page-text;
+}
+.subtext {
+  @media screen and (min-width:1440px) {
+      margin-bottom: 12px;
+  }
+  color: $color-subtext;
+margin-bottom:28px
+}
+.border {
+  display: none;
+  @media screen and (min-width: 1440px){
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+
+
+}
+.img-border {
+  position: absolute;
+  bottom: -25px;
+  left: 0%;
+  width: 462px;
+  display: block;
+  margin: auto;
+}
+.simbol{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.simbol::before {
+  position: absolute;
+  top: 20px;
+  left: 34px;
+  background-position: -10px -58px;
+  width: 101px;
+  height: 17px;
+  @media screen and (min-width:1440px) {
+    top: 55px;
+  }
+}

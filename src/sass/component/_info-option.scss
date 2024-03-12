@@ -1,0 +1,82 @@
+.info-options {
+	background: linear-gradient(to bottom, $bg-page-second 50%, $bg-page-first 50%);
+	padding-top: 90px;
+	padding-bottom: 95px;
+	position: relative;
+}
+.info {
+	@media screen and (min-width:1440px) {
+		@include displayGrid(1fr,repeat(2,minmax(auto, 560px)),100px,0,);
+		margin-bottom: 70px;
+	}
+	@include displayGrid(1fr 1fr, minmax(320px, 568px),0,100px,);
+	justify-content: center;
+	align-items: center;
+	
+}
+.tytle-info {
+	.tytle-option {
+		font-size: 48px;
+		line-height: 1.2;
+
+	}
+}
+
+.text-option {
+	font-size:20px
+}
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+.inviting {
+position: relative;
+padding-left: 67px;
+}
+.inviting-sprite {
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	border-radius:50%;
+	background: $bg-page-first;
+	top: 0;
+	left: 0;
+}
+.inviting-sprite:before{
+width: 20px;
+height: 20px;
+top:50%;
+left: 50%;
+transform:translate(-50%,-50%);
+background-position:-224px -11px
+}
+
+.inviting+.inviting .inviting-sprite:before{
+width: 20px;
+height: 20px;
+top:50%;
+left: 50%;
+transform:translate(-50%,-50%);
+background-position:-57px -143px
+}
+.tytle-inviting {
+font-family: $semibold;
+padding-top: 18px;
+padding-bottom: 18px;
+line-height: 1.2;
+color:$color-tytle-text
+}
+.text-inviting {
+line-height: 1.5;
+}
+.info-video {
+	img{
+		display: none;
+		@media screen and (min-width:1440px) {
+			display: block;
+			border-radius:5px;
+			margin: auto;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+@mixin displayGrid($row, $column, $gap-column, $gap-row) {
+  display: grid;
+  grid-template: $row/$column;
+  column-gap: $gap-column;
+  row-gap: $gap-row;
+}

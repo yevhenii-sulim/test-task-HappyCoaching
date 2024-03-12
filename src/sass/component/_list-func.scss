@@ -1,0 +1,81 @@
+.list-func{
+	padding-top: 125px;
+	padding-bottom: 125px;
+	.subtext{
+		color:#4A556C50
+	}
+}
+.title-list-func{
+	padding-bottom: 65px;
+	text-align: center;
+}
+.list-title{
+	font-size:36px;
+	line-height: 1.2;
+	font-family: $semibold;
+	margin: 20px 0 32px 0;
+	color: $color-tytle-text
+}
+.text-list{
+	font-size: 20px;
+	margin: auto;
+	text-align: center;
+	max-width: 768px;
+	line-height: 1.5;
+	color:#4A556C70
+}
+.list-option{
+	@media screen and (min-width:1440px) {
+		@include displayGrid(repeat(2,172px), repeat(3,384px),40px,60px);
+	}
+	@include displayGrid(repeat(6,172px), minmax(auto,384px),0px,96px);
+	justify-content: center;
+	li{
+		text-align: center;
+	}
+}
+.sign-option{
+	width: 56px;
+	height: 56px;
+	margin: auto;
+	border-radius: 50%;
+	background-color:$bg-page-second;
+
+}
+.option .sign-option::before{
+	background-position: -56px -143px;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+}
+.option+.option .sign-option::before{
+	background-position: -184px -143px;
+}
+
+.option+.option+.option .sign-option::before{
+	background-position: -179px -100px;
+}
+
+.option+.option+.option+.option .sign-option::before{
+	background-position: -98px -142px;
+}
+
+.option+.option+.option+.option+.option .sign-option::before{
+	background-position: -141px -142px;
+}
+
+.option+.option+.option+.option+.option+.option .sign-option::before{
+	background-position: -179px -100px;
+}
+
+.tytle-option{
+	font-size:20px;
+	line-height: 1.2;
+	font-family: $semibold;
+	margin: 20px 0 32px 0;
+	color: $color-tytle-text}
+.text-option{
+	line-height: 1.5;
+}

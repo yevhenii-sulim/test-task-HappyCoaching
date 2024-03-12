@@ -1,0 +1,32 @@
+{
+  "name": "test-task-HappyCoaching",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://yevhenii-sulim.github.io/test-task-HappyCoaching",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "sass":" sass --watch src/sass/index.scss src/css/index.css",
+    "build": "parcel build src/*.html --public-url /test-task-HappyCoaching/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yevhenii-sulim/test-task-HappyCoaching.git"
+  },
+  "keywords": [],
+  "author": "Sulim Yevgenii <bees127@ukr.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yevhenii-sulim/test-task-HappyCoaching"
+  },
+  "dependencies": {
+    "modern-normalize": "^1.1.0",
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
