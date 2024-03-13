@@ -1,28 +1,25 @@
+.header-section{
+    background-color: $bg-page-second;
+}
 .header {
-  padding-left: 15px;
-  padding-right: 15px;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 1440px) {
-    padding-left: 85px;
-    padding-right: 75px;
-  }
 }
 .nav-button{
   background: transparent;
   border:none;
   position: absolute;
   top: 0;
-  right: -25%;
+  right: 0%;
   width: 30px;
   height: 30px;
   transform:translate(-50%, 50%);
   display: block;
   cursor: pointer;
       z-index:5;
-  @media screen and (min-width: 1440px){
+  @media screen and (min-width: 1280px){
     display: none;
   }
 }
@@ -97,7 +94,7 @@ transform:translatey(-50%);
     flex-direction: column;
     gap:40px;
   }
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width:1280px) {
     display: none;
   }
   
@@ -119,7 +116,7 @@ transform:translatey(-50%);
 }
 .nav,
 .nav-list {
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1279px) {
     display:none;
   }
     display: flex;
@@ -185,32 +182,35 @@ transform:translatey(-50%);
 .button--page {
   padding: 9px 16px 9px 16px;
   width: 250px;
+  height:42px;
   border-radius: 10px;
 }
 .button--nav {
   padding: 11px 16px 11px 16px;
 }
+
 .main {
     @include displayGrid(minmax(677px, auto), 1fr, 0, 0);
     padding-left: 15px;
     padding-right: 15px;
-  @media screen and (min-width:1440px){
+  @media screen and (min-width:1280px){
     @include displayGrid(minmax(677px, auto), 1fr 1fr, 160px, 0);
     padding-left: 85px;
     padding-right: 75px;
   }
   justify-content: center;
   align-items: center;
-  background-color: $bg-page-second;
   position: relative;
 }
+
+
 .main-tytle h1 {
   font-size: 72px;
   font-family: $semibold;
   color: $color-tytle-text;
 }
 .text-main {
-  @media screen and (min-width:1440px){
+  @media screen and (min-width:1280px){
     padding-top: 12px;
   }
   font-size: 18px;
@@ -220,7 +220,7 @@ transform:translatey(-50%);
   color: $color-page-text;
 }
 .subtext {
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width:1280px) {
       margin-bottom: 12px;
   }
   color: $color-subtext;
@@ -228,7 +228,7 @@ margin-bottom:28px
 }
 .border {
   display: none;
-  @media screen and (min-width: 1440px){
+  @media screen and (min-width: 1280px){
     display: block;
     position: relative;
     height: 100%;
@@ -256,7 +256,7 @@ margin-bottom:28px
   background-position: -10px -58px;
   width: 101px;
   height: 17px;
-  @media screen and (min-width:1440px) {
+  @media screen and (min-width:1280px) {
     top: 55px;
   }
 }

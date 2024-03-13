@@ -1,0 +1,53 @@
+.contact{
+	background-color: $bg-page-second;
+}
+.subscribe{
+	display: flex;
+	flex-direction: column;
+	gap:32px;
+	align-items: center;
+	padding-bottom: 52px;
+	padding-top: 52px;
+	padding-left: 15px;
+	padding-right: 15px;
+	@media screen and (min-width:1280px){
+		justify-content: space-between;
+		flex-direction: row;
+		gap: 0;
+	}
+}
+.notiication {}
+.tytle-notified {
+	font-size: 30px;
+	margin-bottom: 32px;
+}
+.text-notification {
+	color:$color-logo-text;
+	font-size: 20px;
+	line-height: 1.5;
+}
+.mail-notification {
+	display: flex;
+	gap: 16px;
+	@media screen and (max-width: 767px) {
+		flex-direction: column;
+	}
+	input{
+		border:1px solid #d0d4dd;
+		border-radius:10px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 280px;
+		&::placeholder{
+			color:$color-nav-text
+		}
+	}
+	.button {
+		border-radius:10px;
+		padding: 10px 18px 10px 18px;
+		width: 150px;
+	}
+}
+

@@ -10,19 +10,25 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-.wrapper {
+h1,h2,h3,h4,h5{
+  font-family: $semibold;
+  color:$color-tytle-text
+}
+.text-option{
+  color:$color-nav-text;
+}
+
+.container{
   margin: auto;
+  @media screen and (min-width: 1280px) {
+    width: 1220px;
+  }
+}
+
+.wrapper {
   font-family: $regular;
   font-size: 16px;
   color: $color-page-text;
-  @media screen and (max-width: 767px) {
-    width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
-  }
 }
 .sprite{
   position: relative;

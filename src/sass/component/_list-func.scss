@@ -25,10 +25,10 @@
 	color:#4A556C70
 }
 .list-option{
-	@media screen and (min-width:1440px) {
-		@include displayGrid(repeat(2,172px), repeat(3,384px),40px,60px);
+	@media screen and (min-width:1280px) {
+		@include displayGrid(repeat(2,auto), repeat(3,384px),40px,20px);
 	}
-	@include displayGrid(repeat(6,172px), minmax(auto,384px),0px,96px);
+	@include displayGrid(repeat(6,auto), minmax(auto,384px),0px,20px);
 	justify-content: center;
 	li{
 		text-align: center;

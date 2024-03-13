@@ -1,0 +1,77 @@
+.programs {
+	background-color: $bg-page-second;
+	padding-top: 52px;
+	padding-bottom: 52px;
+}
+.header-program{
+	text-align: center;
+}
+.program-tytle {
+	font-size: 48px;
+	line-height: 1.2;
+	font-family: $semibold;
+	margin-top: 24px;
+	margin-bottom: 54px;
+	color:$color-tytle-text;
+	max-width: 488px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.buy-program{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:24px;
+@media screen and (min-width:1280px){
+	flex-direction: row;
+	justify-content: center;
+}
+}
+.buyed-program {
+	padding-top: 62px;
+	padding-bottom: 62px;
+	padding-left: 56px;
+	padding-right: 56px;
+	max-width:446px
+}
+.option-program {
+	text-align: center;
+	font-size: 22px;
+	font-family: $semibold;
+	color:$color-tytle-text;
+	margin-bottom: 80px;
+	span{
+		text-decoration: underline;
+	}
+}
+.option-list-program {
+	display: flex;
+	flex-direction: column;
+	gap:36px;
+	li{
+		padding-left: 33px;
+		&:before{
+			width: 20px;
+			height: 20px;
+			top: -3px;
+			left: 0;
+			position: absolute;
+			background-position:-223px -54px
+		}
+	}
+}
+
+.buyed-program--background {
+	background-color: $bg-page-first;
+	li{
+		padding-left: 33px;
+		&:before{
+			width: 20px;
+			height: 20px;
+			top: -3px;
+			left: 0;
+			position: absolute;
+			background-position:-223px -96px
+		}
+	}
+}

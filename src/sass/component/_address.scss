@@ -1,0 +1,119 @@
+.logo-footer {
+	grid-area: logo;
+	.text-list{
+		color:$color-nav-text;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: left;
+		margin-top: 40px;
+	}
+}
+
+.pages {
+	grid-area: pages;
+	ul{
+		display: flex;
+		flex-direction: column;
+		gap:16px;
+	}
+	a{
+		font-size: 16px;
+		line-height: 1.5;
+		color:$color-nav-text;
+		text-decoration: none;
+	}
+}
+.contacts {
+	grid-area: contacts;
+	ul{
+		display: flex;
+		flex-direction: column;
+		gap:16px;
+	}
+	a{
+		font-size: 16px;
+		line-height: 1.5;
+		color:$color-nav-text;
+		text-decoration: none;
+	}
+}
+
+.footer-contact{
+	padding-top: 66px;
+	padding-bottom: 66px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom: 1px $color-subtext solid;
+	@include displayGrid(auto auto,auto auto, 32px, 32px);
+	justify-content: center;
+	grid-template-areas: 
+	                     "logo logo"
+	                     "pages contacts";
+	@media screen and (min-width:1280px) {
+		@include displayGrid(auto,320px 400px 400px, 32px, 0);
+		grid-template-areas: "logo pages contacts";
+	}
+}
+.footer-list-tytle {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 22px;
+}
+.address-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 32px;
+	padding-bottom: 40px;
+	gap:16px;
+	@media screen and (min-width:1280px){
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+	}
+	
+}
+.byMade {
+	font-size: 12px;
+	line-height: 1.2;
+	color:#041434;
+	font-weight: 700;
+	span{
+		display: inline-block;
+		vertical-align: middle;
+		width: 12px;
+		height: 12px;
+		&:before{
+			width: 100%;
+			height: 100%;
+			background-position:-131px -58px
+		}
+	}
+	a{
+		text-decoration: none;
+		color:#041434;
+		font-weight: 800;
+	}
+}
+.linkSocial {
+	display: flex;
+	align-items: center;
+	gap:24px;
+	a{
+		display: block;
+		width: 25px;
+		height: 25px;
+		&:before{
+			width: 100%;
+			height: 100%;
+			background-position: -98px -95px
+		}
+	}
+	a+a:before{
+		background-position: -179px -54px
+	}	a+a+a:before{
+		background-position: -179px -9px
+	}
+}

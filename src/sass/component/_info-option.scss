@@ -5,7 +5,7 @@
 	position: relative;
 }
 .info {
-	@media screen and (min-width:1440px) {
+	@media screen and (min-width:1280px) {
 		@include displayGrid(1fr,repeat(2,minmax(auto, 560px)),100px,0,);
 		margin-bottom: 70px;
 	}
@@ -73,7 +73,7 @@ line-height: 1.5;
 .info-video {
 	img{
 		display: none;
-		@media screen and (min-width:1440px) {
+		@media screen and (min-width:1280px) {
 			display: block;
 			border-radius:5px;
 			margin: auto;

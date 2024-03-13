@@ -1,0 +1,53 @@
+.online-session {
+	padding-top: 166px;
+	padding-bottom: 166px;
+}
+.online-main {
+	border-radius: 30px;
+	background-color: $bg-page-second;
+	@media screen and (min-width: 1280px){
+		@include displayGrid(auto,1fr 1fr, 0,0);
+		padding-left: 64px;
+		overflow: hidden;
+	}
+}
+.online-content {
+	padding-top: 140px;
+	padding-bottom: 130px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.tytle-online {
+	font-family: $semibold;
+	color:$color-tytle-text;
+	font-size: 36px;
+	line-height: 1.26;
+}
+.text-online {
+	margin-top: 34px;
+	margin-bottom: 48px;
+	font-size: 20px;
+	line-height: 1.5;
+	color:#4A556C50
+}
+.button--page {}
+.img-online {
+	@media screen and (max-width:1279px) {
+		display: none;
+	}
+	position: relative;
+	img{
+		position: absolute;
+		bottom: 0; 
+		right: 0;
+	}
+}
+.button-meet {
+	width: 84px;
+	height: 32px;
+	position: absolute;
+	top: 103px;
+	left: 38px;
+	cursor: pointer;
+	background: transparent;
+}
