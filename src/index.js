@@ -34,11 +34,11 @@ function toggleQuestionText(evt){
 	const questionSignOpenClose = question.querySelector('.open-close');
 	const textQuestion = question.querySelector(".text-question")
 	console.log( questionSignOpenClose)
-	if(textQuestion.classList.contains("hidden")){
-		textQuestion.classList.remove('hidden');
+	if(textQuestion.classList.contains("visible")){
+		textQuestion.classList.remove('visible');
 		questionSignOpenClose.style = `background-position: -11px -98px`
 	} else {
-		textQuestion.classList.add('hidden');
+		textQuestion.classList.add('visible');
 		questionSignOpenClose.style = `background-position: -55px -96px`
 	}
 }

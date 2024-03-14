@@ -1035,6 +1035,10 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
 }
 
+.visible {
+  display: none;
+}
+
 .get-question {
   max-width: 1220px;
   background: #faf8f6;
