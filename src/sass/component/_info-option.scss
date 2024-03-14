@@ -1,13 +1,12 @@
 .info-options {
 	background: linear-gradient(to bottom, $bg-page-second 50%, $bg-page-first 50%);
 	padding-top: 90px;
-	padding-bottom: 95px;
+	padding-bottom: 32px;
 	position: relative;
 }
 .info {
 	@media screen and (min-width:1280px) {
 		@include displayGrid(1fr,repeat(2,minmax(auto, 560px)),100px,0,);
-		margin-bottom: 70px;
 	}
 	@include displayGrid(1fr 1fr, minmax(320px, 568px),0,100px,);
 	justify-content: center;
