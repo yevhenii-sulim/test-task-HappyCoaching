@@ -203,6 +203,7 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 15px;
 }
 
 .nav-button {
@@ -380,7 +381,6 @@ h1, h2, h3, h4, h5 {
 
 .button {
   background: #1fad95;
-  border-radius: 4px;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -407,9 +407,9 @@ h1, h2, h3, h4, h5 {
   row-gap: 0;
   padding-left: 15px;
   padding-right: 15px;
-  justify-content: center;
   align-items: center;
   position: relative;
+  text-align: center;
 }
 @media screen and (min-width: 1280px) {
   .main {
@@ -417,15 +417,22 @@ h1, h2, h3, h4, h5 {
     grid-template: minmax(677px, auto)/1fr 1fr;
     column-gap: 160px;
     row-gap: 0;
+    text-align: left;
     padding-left: 85px;
     padding-right: 75px;
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .main-tytle .text-option {
+    text-align: left;
+  }
+}
 .main-tytle h1 {
   font-size: 72px;
   font-family: "kumbh_sansblack";
   color: #333461;
+  margin-bottom: 30px;
 }
 
 .text-main {
@@ -592,7 +599,7 @@ h1, h2, h3, h4, h5 {
 .info-options {
   background: linear-gradient(to bottom, #faf8f6 50%, #ffffff 50%);
   padding-top: 90px;
-  padding-bottom: 95px;
+  padding-bottom: 32px;
   position: relative;
 }
 
@@ -610,7 +617,6 @@ h1, h2, h3, h4, h5 {
     grid-template: 1fr/repeat(2, minmax(auto, 560px));
     column-gap: 100px;
     row-gap: 0;
-    margin-bottom: 70px;
   }
 }
 
@@ -626,7 +632,11 @@ h1, h2, h3, h4, h5 {
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+}
+@media screen and (min-width: 1280px) {
+  .contact-info {
+    gap: 64px;
+  }
 }
 
 .inviting {
@@ -667,6 +677,7 @@ h1, h2, h3, h4, h5 {
   padding-top: 18px;
   padding-bottom: 18px;
   line-height: 1.2;
+  font-size: 18px;
   color: #333461;
 }
 
@@ -688,10 +699,12 @@ h1, h2, h3, h4, h5 {
 .header-feedback {
   padding-left: 15px;
   padding-right: 15px;
+  text-align: center;
   margin-bottom: 100px;
 }
 @media screen and (min-width: 768px) {
   .header-feedback {
+    text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -865,6 +878,7 @@ h1, h2, h3, h4, h5 {
 .online-main {
   border-radius: 30px;
   background-color: #faf8f6;
+  text-align: center;
 }
 @media screen and (min-width: 1280px) {
   .online-main {
@@ -874,6 +888,7 @@ h1, h2, h3, h4, h5 {
     row-gap: 0;
     padding-left: 64px;
     overflow: hidden;
+    text-align: left;
   }
 }
 
@@ -924,7 +939,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .guarantee {
-  padding-bottom: 154px;
+  padding-bottom: 74px;
 }
 
 .guarantee-content {

@@ -6,7 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 15px;
 }
+
 .nav-button{
   background: transparent;
   border:none;
@@ -170,7 +172,6 @@ transform:translatey(-50%);
 
 .button {
   background: $bg-btn;
-  border-radius: 4px;
   color: $color-btn;
   border: none;
   cursor: pointer;
@@ -190,25 +191,34 @@ transform:translatey(-50%);
 }
 
 .main {
-    @include displayGrid(minmax(677px, auto), 1fr, 0, 0);
-    padding-left: 15px;
-    padding-right: 15px;
+  @include displayGrid(minmax(677px, auto), 1fr, 0, 0);
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  position: relative;
+  text-align: center;
   @media screen and (min-width:1280px){
     @include displayGrid(minmax(677px, auto), 1fr 1fr, 160px, 0);
+    text-align: left;
     padding-left: 85px;
     padding-right: 75px;
   }
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
-
-.main-tytle h1 {
-  font-size: 72px;
-  font-family: $semibold;
-  color: $color-tytle-text;
+.main-tytle{
+  .text-option {
+    @media screen and (min-width:1280px) {
+      text-align: left;
+    }
+  }
+  h1 {
+    font-size: 72px;
+    font-family: $semibold;
+    color: $color-tytle-text;
+    margin-bottom: 30px;
+  }
 }
+
 .text-main {
   @media screen and (min-width:1280px){
     padding-top: 12px;

@@ -5,10 +5,12 @@
 .online-main {
 	border-radius: 30px;
 	background-color: $bg-page-second;
+	text-align: center;
 	@media screen and (min-width: 1280px){
 		@include displayGrid(auto,1fr 1fr, 0,0);
 		padding-left: 64px;
 		overflow: hidden;
+		text-align: left;
 	}
 }
 .online-content {
