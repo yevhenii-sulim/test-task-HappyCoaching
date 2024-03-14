@@ -39,7 +39,8 @@
     &.hidden{
       transform:rotate(45deg) translatey( -50%);
       top: 10%;
-
+      z-index: 5;
+      background: #000;
     }
   }
   &--bottom{
@@ -47,6 +48,8 @@
     &.hidden{
       transform:rotate(-45deg) translatey(-50%);
       bottom: 10%;
+      z-index: 5;
+      background: #000;
     }
   }
   &--open{

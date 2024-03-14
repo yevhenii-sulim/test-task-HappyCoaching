@@ -158,6 +158,10 @@ table {
   margin: -1px;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: "kumbh_sansblack";
   color: #333461;
@@ -240,6 +244,8 @@ h1, h2, h3, h4, h5 {
 .button-menu--top.hidden {
   transform: rotate(45deg) translatey(-50%);
   top: 10%;
+  z-index: 5;
+  background: #000;
 }
 .button-menu--bottom {
   bottom: 20%;
@@ -247,6 +253,8 @@ h1, h2, h3, h4, h5 {
 .button-menu--bottom.hidden {
   transform: rotate(-45deg) translatey(-50%);
   bottom: 10%;
+  z-index: 5;
+  background: #000;
 }
 .button-menu--open {
   top: 50%;
@@ -398,6 +406,7 @@ h1, h2, h3, h4, h5 {
 
 .button--nav {
   padding: 11px 16px 11px 16px;
+  border-radius: 10px;
 }
 
 .main {
@@ -1024,10 +1033,6 @@ h1, h2, h3, h4, h5 {
 .text-question {
   margin-top: 16px;
   line-height: 1.5;
-}
-
-.hidden {
-  display: none;
 }
 
 .get-question {
